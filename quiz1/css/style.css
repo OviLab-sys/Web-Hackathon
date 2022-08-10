@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+     margin: 0;
+     padding: 0%;
+     box-sizing: border-box;
+
+}
+a{
+     text-decoration: none;
+}
+body{
+     background-color: rgb(5, 36, 5);
+     
+}
+
+ul{
+     list-style: none;
+}
+header{
+     position: fixed;
+     top: 0%; left: 0%;
+     right: 0%;
+     background-color: rgb(11, 26, 1);
+     z-index: 1000;
+     display: inline-block;
+     align-items: center;
+     justify-content: space-between;
+     padding:0 20%;
+     
+}
+
+ header .navbar a{
+     color: antiquewhite;
+     font-size: 13px;
+     margin: 0 .8rem;
+}
+.menu-btn{
+     display: none;
+     cursor: pointer;
+}
+.bar{
+     display: block;
+     width: 25px;
+     height: 3px;
+     margin: 5px auto;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     background-color: antiquewhite;
+}
+nav ul{
+     float: right;
+     margin-right:150px;
+     padding-top: 22px;
+}
+.button{
+     float: right;
+     padding-left: 100px;
+     padding-bottom: 20px;
+     
+}
+
+nav li{
+     display:inline-block;
+     margin: 0 5px;
+     padding-top: 15px;
+
+}
+nav a{
+     color:antiquewhite;
+     font-size: 13px;
+     text-transform: uppercase;
+     border: 1px solid green;
+     border: 1px solid transparent;
+     padding: 4px 10px;
+     border-radius: 3px;
+     align-items: center;
+}
+a.active, a:hover{
+     border: 1px solid antiquewhite;
+     transition: .5s;
+}
+label.logo{
+     font-size: 40px;
+     font-weight: bold;
+     color: #0d8109;
+     padding: 0 60px;
+     line-height: 100px;
+}
+
+label.logo span{
+     color: antiquewhite;
+}
+
+.nav-linksli{
+     margin: 0 30px;
+}
+.button a{
+     display: inline-block;
+     background: linear-gradient(45deg,#022511, #10790c );
+     border-radius: 6px;
+     padding: 8px 40px;
+     box-sizing: border-box;
+     text-decoration: none;
+     color: antiquewhite;
+     box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+     font-size: 13px;
+}
+
+section{
+     width: 100%;
+     height: 100%;
+     background-image: url(../images/pic10.jpg);
+     background-position: bottom;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.section-content{
+     margin-top: 100px;
+     margin-bottom: 100px;
+     color: rgb(120, 248, 231);
+     text-align: center;
+}
+.section-content h2{
+     font-size: 4vmin;
+     font-family: cursive;
+}
+.section-content span{
+     color: #10cc09;
+}
+.line{
+     width: 300px;
+     height: 1px;
+     background-color: rgb(51, 250, 1);
+     margin: 10px auto;
+     border-radius: 4px;
+}
+.section-content h2{
+     font-size: 9vmin;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+.ctn{
+     padding: 5px 16px;
+     background: rgb(68, 240, 25);
+     border-radius: 30px;
+     color: azure;
+}
+nav #icon{
+     color: antiquewhite;
+     font-size: 30px;
+     line-height: 80px;
+     float: right;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+}
+/*mobile device*/
+@media (max-width: 1048px){
+     label.logo{
+          font-size: 35px;
+          padding-left: 20px;
+     }
+     nav ul{
+          margin-right: 20px;
+     }
+     nav a{
+          font-size: 17px;
+          color: #000000;
+     }
+}
+@media (max-width: 909px){
+     nav #icon{
+          display: block;
+     }
+     nav ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background-color: transparent;
+          top: 60px;
+          left: 0;
+          text-align: center;
+     }
+     nav li{
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+     }
+     nav a{
+          font-size: 20px;
+     }
+     a.ctive, a:hover{
+          border: none;
+          color:#04f7ff;
+     }
+     .btn span{
+          background: rgb(16, 34, 11);
+          color: azure;
+          padding:0 10px;
+     }
+}
+.testimony{
+     text-align: center;
+     padding: 2rem 0;
+     padding-bottom: 20px;
+     font-size: 1.5rem;
+     color: antiquewhite;
+     font-family: fantasy;
+     font-weight: 100;
+}
+.box-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap: 20px;
+     padding-top: 20px;
+}
+.pics{
+     width: 40%;
+     height: 60%;
+}
+.customer{
+     font-family: cursive;
+     font-weight: lighter;
+     color: rgb(43, 151, 10);
+}
+.paragraph{
+     font-family: serif;
+     font-size: medium;
+     font-weight: lighter;
+     font-style: italic;
+}
+.pics1{
+     width: 40%;
+     height: 60%;
+}
+.box1{
+     background-color: #203020;
+     border-radius: .5rem;
+     text-align: center;
+     padding: 20px 10px;
+}
+.price{
+     font-style: italic;
+     color: antiquewhite;
+     padding: 3px;
+}
+.btn span{
+     background: rgb(16, 34, 11);
+     color: azure;
+     padding:0 10px;
+}
+.design{
+     color: antiquewhite;
+     padding: 3px;
+}
+.service-container{
+     display: -moz-grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap: 20px;
+     padding-top: 20px;
+}
+.service-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap: 5px;
+     padding-top: 20px;
+
+}
+.services1{
+     color: antiquewhite;
+     text-align: center;
+
+}
+.pics2{
+     width: 50%;
+     height: 70%;
+
+}
+.gallery-heading{ 
+     text-align: center;
+     padding: 2rem 0;
+     padding-bottom: 20px;
+     font-size: 1.5rem;
+     color: antiquewhite;
+     font-family: fantasy;
+     font-weight: 100;
+     
+}
+.galleries{
+     display: -moz-grid;
+     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+     gap: 20px;
+     padding-top: 30px;
+}
+.galleries{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+     gap: 5px;
+     padding-top: 10px;
+
+}
+.num{
+     font-style: italic;
+     color: antiquewhite;
+     padding: 5px 5px;
+}.box2{
+     background-color: #203020;
+     border-radius: .2rem;
+     text-align: center;
+     padding: 10px 5px;
+}
+.about-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap: 20px;
+     padding-top: 20px;
+     padding-bottom: 10px;
+}
+.about-heading{
+     font-weight: lighter;
+     color: antiquewhite;
+     font-family: serif;
+     padding-bottom: 10px;
+     text-align: center;
+}
+.shop{
+     font-family: serif;
+     color: antiquewhite;
+     font-weight: bold;
+     text-align: center;
+     padding-top: 10px;
+}
+.about-paragraph{
+     color: #04f7ff;
+     padding-bottom: 5px;
+     text-align: center;
+}
+

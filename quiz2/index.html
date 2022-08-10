@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>group 14</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="login form-hidden " method="post" name="loginForm" id="login">
+            <div class="heading">
+                <h1>Login</h1>
+            </div>
+            <div class="errmsg"></div>
+            <div class="details">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password">
+
+            </div>
+            <div class="submit">
+                <a href="#"> forgot password </a>
+                <input type="submit" value="login" onclick="validate()">
+            </div>
+            <p>Dont have an account <a href="" id="signupLink">signup</a></p>
+        </form>
+        <form action="" class="signup" method="post" name="signUpForm" id="signUp">
+            <div class="heading">
+                <h1>SignUp</h1>
+            </div>
+            <div class="errmsg" id="errmsg"></div>
+            <div class="details">
+                <input type="text" name="username" id="userName" placeholder="Username" required>
+                <input type="email" name="email" id="email" placeholder="Email">
+
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="password" name="password" id="cPassword" placeholder="Confirm Password">
+            </div>
+            <div class="submit">
+                <p>By signing up you agree with the <a href="#"> terms and conditions </a></p>
+                <input type="submit" value="signUp">
+            </div>
+            <p>Already have an account <a href="#login" id="loginLink">Login</a></p>
+        </form>
+
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
